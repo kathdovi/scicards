@@ -1,5 +1,8 @@
 import React from "react";
 import kathleen from "./kathleen.jpg";
+import paloma from "./paloma.png";
+import marco from "./marco.jpg";
+import will from "./will.jpg"
 import Grid from '@material-ui/core/Grid';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,11 +28,11 @@ class Team extends React.Component {
             <Grid container spacing={24}>
                 <Grid item xs={6}>
                     <p style={pstyle}> Will </p>
-                    <img src={kathleen} style={styles} />
+                    <img src={will} style={styles} />
                     <br />
                     <p style={pstyle}> AR Developer
                     </p>
-                    <a style={{ color: "white" }} href="https://www.linkedin.com/in/kathleen-doviken/">
+                    <a style={{ color: "white" }} href="https://www.linkedin.com/in/williamx98/">
                         <FontAwesomeIcon style={{ marginRight: "10px", color: "black"  }} icon={["fab", "linkedin"]} />
                     </a>
                     <a style={{ color: "white" }} href="https://github.com/williamx98">
@@ -52,26 +55,20 @@ class Team extends React.Component {
                 </Grid>
                 <Grid item xs={6}>
                     <p style={pstyle}> Marco </p>
-                    <img src={kathleen} style={styles} />
+                    <img src={marco} style={styles} />
                     <br />
                     <p style={pstyle}> UX/UI & Graphics Designer </p>
-                    <a style={{ color: "white" }} href="https://www.linkedin.com/in/mgallagher6/">
-                        <FontAwesomeIcon style={{ marginRight: "10px", color: "black" }} icon={["fab", "linkedin"]}/>
-                    </a>
-                    <a style={{ color: "white" }} href="https://github.com/megzimo">
-                        <FontAwesomeIcon icon={["fab", "github"]} style={{ color: "black" }}/>
+                    <a style={{ color: "white" }} href="https://www.linkedin.com/in/marco-guajardo/?fbclid=IwAR0tJofsMB-C-BD9TTLXzvbqqj_ZlSa76jO9BJFIfFizhC7agQV7wEWMu3o">
+                        <FontAwesomeIcon style={{ color: "black" }} icon={["fab", "linkedin"]}/>
                     </a>
                 </Grid>
                 <Grid item xs={6}>
                     <p style={pstyle}> Paloma </p>
-                    <img src={kathleen} style={styles} />
+                    <img src={paloma} style={styles} />
                     <br />
                     <p style={pstyle}> Content Developer </p>
-                    <a style={{ color: "white" }} href="https://www.linkedin.com/in/thomas-smajstrla-8b8879b4/">
-                        <FontAwesomeIcon style={{ marginRight: "10px", color: "black" }} icon={["fab", "linkedin"]}/>
-                    </a>
-                    <a style={{ color: "white" }} href="https://github.com/TomSmaj">
-                        <FontAwesomeIcon icon={["fab", "github"]} style={{color: "black"}}/>
+                    <a style={{ color: "white" }} href="https://www.linkedin.com/in/paloma-june-085317124/">
+                        <FontAwesomeIcon style={{ color: "black" }} icon={["fab", "linkedin"]}/>
                     </a>
                 </Grid>
             </Grid>

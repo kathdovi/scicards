@@ -1,17 +1,19 @@
 import Carousel from "react-bootstrap/Carousel";
 import React from "react";
 import LeftArm from "../markers/left_arm.png";
-import RightArm from "../markers/right_arm.png";
 import LeftHand from "../markers/left_hand.png";
-import RightHand from "../markers/right_hand.png";
 import LeftLeg from "../markers/left_leg.png";
-import RightLeg from "../markers/right_leg.png";
 import LeftFoot from "../markers/left.png";
-import RightFoot from "../markers/right.png";
 import Pelvis from "../markers/pelvis.png";
+import PelvisBack from "./pelvis_back.png";
 import Ribs from "../markers/ribs.png";
+import RibsBack from "./ribs_back.png";
 import Skull from "../markers/skull.png";
-import Back from "./back.png";
+import SkullBack from "./head_back.png";
+import FootBack from "./foot_back.png";
+import ArmBack from "./arm_back.png";
+import HandBack from "./hand_back.png";
+import LegBack from "./leg_back.png";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
 
 
@@ -46,34 +48,7 @@ class BoneCarousel extends React.Component {
               <BackSide>
                 <img
                   className="d-block w-100"
-                  src={Back}
-                  alt="First slide"
-                  style={{ width: "100%", height: "100%" }}
-                />
-              </BackSide>
-            </Flippy>
-          </Carousel.Item>
-          <Carousel.Item>
-            <Flippy
-              flipOnHover={true} // default false
-              flipOnClick={false} // default false
-              flipDirection="horizontal" // horizontal or vertical
-              ref={r => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
-              // if you pass isFlipped prop component will be controlled component.
-              // and other props, which will go to div
-            >
-              <FrontSide>
-                <img
-                  className="d-block w-100"
-                  src={RightArm}
-                  alt="First slide"
-                  style={{ width: "100%", height: "100%" }}
-                />
-              </FrontSide>
-              <BackSide>
-                <img
-                  className="d-block w-100"
-                  src={Back}
+                  src={ArmBack}
                   alt="First slide"
                   style={{ width: "100%", height: "100%" }}
                 />
@@ -100,39 +75,12 @@ class BoneCarousel extends React.Component {
             <BackSide>
               <img
                 className="d-block w-100"
-                src={Back}
+                src={HandBack}
                 alt="First slide"
                 style={{ width: "100%", height: "100%" }}
               />
             </BackSide>
           </Flippy>
-          </Carousel.Item>
-          <Carousel.Item>
-            <Flippy
-              flipOnHover={true} // default false
-              flipOnClick={false} // default false
-              flipDirection="horizontal" // horizontal or vertical
-              ref={r => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
-            // if you pass isFlipped prop component will be controlled component.
-            // and other props, which will go to div
-            >
-              <FrontSide>
-                <img
-                  className="d-block w-100"
-                  src={RightHand}
-                  alt="First slide"
-                  style={{ width: "100%", height: "100%" }}
-                />
-              </FrontSide>
-              <BackSide>
-                <img
-                  className="d-block w-100"
-                  src={Back}
-                  alt="First slide"
-                  style={{ width: "100%", height: "100%" }}
-                />
-              </BackSide>
-            </Flippy>
           </Carousel.Item>
           <Carousel.Item>
             <Flippy
@@ -154,34 +102,7 @@ class BoneCarousel extends React.Component {
               <BackSide>
                 <img
                   className="d-block w-100"
-                  src={Back}
-                  alt="First slide"
-                  style={{ width: "100%", height: "100%" }}
-                />
-              </BackSide>
-            </Flippy>
-          </Carousel.Item>
-          <Carousel.Item>
-            <Flippy
-              flipOnHover={true} // default false
-              flipOnClick={false} // default false
-              flipDirection="horizontal" // horizontal or vertical
-              ref={r => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
-            // if you pass isFlipped prop component will be controlled component.
-            // and other props, which will go to div
-            >
-              <FrontSide>
-                <img
-                  className="d-block w-100"
-                  src={RightLeg}
-                  alt="First slide"
-                  style={{ width: "100%", height: "100%" }}
-                />
-              </FrontSide>
-              <BackSide>
-                <img
-                  className="d-block w-100"
-                  src={Back}
+                  src={LegBack}
                   alt="First slide"
                   style={{ width: "100%", height: "100%" }}
                 />
@@ -208,34 +129,7 @@ class BoneCarousel extends React.Component {
               <BackSide>
                 <img
                   className="d-block w-100"
-                  src={Back}
-                  alt="First slide"
-                  style={{ width: "100%", height: "100%" }}
-                />
-              </BackSide>
-            </Flippy>
-          </Carousel.Item>
-          <Carousel.Item>
-            <Flippy
-              flipOnHover={true} // default false
-              flipOnClick={false} // default false
-              flipDirection="horizontal" // horizontal or vertical
-              ref={r => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
-            // if you pass isFlipped prop component will be controlled component.
-            // and other props, which will go to div
-            >
-              <FrontSide>
-                <img
-                  className="d-block w-100"
-                  src={RightFoot}
-                  alt="First slide"
-                  style={{ width: "100%", height: "100%" }}
-                />
-              </FrontSide>
-              <BackSide>
-                <img
-                  className="d-block w-100"
-                  src={Back}
+                  src={FootBack}
                   alt="First slide"
                   style={{ width: "100%", height: "100%" }}
                 />
@@ -262,7 +156,7 @@ class BoneCarousel extends React.Component {
               <BackSide>
                 <img
                   className="d-block w-100"
-                  src={Back}
+                  src={PelvisBack}
                   alt="First slide"
                   style={{ width: "100%", height: "100%" }}
                 />
@@ -289,7 +183,7 @@ class BoneCarousel extends React.Component {
               <BackSide>
                 <img
                   className="d-block w-100"
-                  src={Back}
+                  src={SkullBack}
                   alt="First slide"
                   style={{ width: "100%", height: "100%" }}
                 />
@@ -316,7 +210,7 @@ class BoneCarousel extends React.Component {
               <BackSide>
                 <img
                   className="d-block w-100"
-                  src={Back}
+                  src={RibsBack}
                   alt="First slide"
                   style={{ width: "100%", height: "100%" }}
                 />
