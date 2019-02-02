@@ -1,0 +1,24 @@
+@font-face {
+  font-family: now;
+  src: url("./now.medium.otf") format("opentype");
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  font-family: now;
+  background-color: #ffffff;
+  min-height: 100vh;
+  margin-top: 10vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}

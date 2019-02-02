@@ -1,0 +1,33 @@
+.gray-box {
+    background-color: #808080;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 25px;
+    padding: 15px;
+    padding-left: 15px;
+}
+
+.dark-box {
+    padding-top: 10px;
+    padding-bottom: 2px;
+    background-color: #ff4800;
+    color: white;
+    text-align: left;
+}
+
+.light-box {
+    background-color: #ffb89c;
+}
+
+.secondary {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+}
+
+.alt {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
