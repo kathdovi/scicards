@@ -14,6 +14,7 @@ import FootBack from "./foot_back.png";
 import ArmBack from "./arm_back.png";
 import HandBack from "./hand_back.png";
 import LegBack from "./leg_back.png";
+import QR from "./qr-code.png";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
 
 
@@ -25,7 +26,7 @@ class BoneCarousel extends React.Component {
           style={{
             width: "600px",
             height: "600px",
-            margin: "auto",
+            margin: "auto"
           }}
         >
           <Carousel.Item>
@@ -56,31 +57,31 @@ class BoneCarousel extends React.Component {
             </Flippy>
           </Carousel.Item>
           <Carousel.Item>
-          <Flippy
-            flipOnHover={true} // default false
-            flipOnClick={false} // default false
-            flipDirection="horizontal" // horizontal or vertical
-            ref={r => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
-          // if you pass isFlipped prop component will be controlled component.
-          // and other props, which will go to div
-          >
-            <FrontSide>
-              <img
-                className="d-block w-100"
-                src={LeftHand}
-                alt="First slide"
-                style={{ width: "100%", height: "100%" }}
-              />
-            </FrontSide>
-            <BackSide>
-              <img
-                className="d-block w-100"
-                src={HandBack}
-                alt="First slide"
-                style={{ width: "100%", height: "100%" }}
-              />
-            </BackSide>
-          </Flippy>
+            <Flippy
+              flipOnHover={true} // default false
+              flipOnClick={false} // default false
+              flipDirection="horizontal" // horizontal or vertical
+              ref={r => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
+              // if you pass isFlipped prop component will be controlled component.
+              // and other props, which will go to div
+            >
+              <FrontSide>
+                <img
+                  className="d-block w-100"
+                  src={LeftHand}
+                  alt="First slide"
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </FrontSide>
+              <BackSide>
+                <img
+                  className="d-block w-100"
+                  src={HandBack}
+                  alt="First slide"
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </BackSide>
+            </Flippy>
           </Carousel.Item>
           <Carousel.Item>
             <Flippy
@@ -88,8 +89,8 @@ class BoneCarousel extends React.Component {
               flipOnClick={false} // default false
               flipDirection="horizontal" // horizontal or vertical
               ref={r => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
-            // if you pass isFlipped prop component will be controlled component.
-            // and other props, which will go to div
+              // if you pass isFlipped prop component will be controlled component.
+              // and other props, which will go to div
             >
               <FrontSide>
                 <img
@@ -115,8 +116,8 @@ class BoneCarousel extends React.Component {
               flipOnClick={false} // default false
               flipDirection="horizontal" // horizontal or vertical
               ref={r => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
-            // if you pass isFlipped prop component will be controlled component.
-            // and other props, which will go to div
+              // if you pass isFlipped prop component will be controlled component.
+              // and other props, which will go to div
             >
               <FrontSide>
                 <img
@@ -142,8 +143,8 @@ class BoneCarousel extends React.Component {
               flipOnClick={false} // default false
               flipDirection="horizontal" // horizontal or vertical
               ref={r => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
-            // if you pass isFlipped prop component will be controlled component.
-            // and other props, which will go to div
+              // if you pass isFlipped prop component will be controlled component.
+              // and other props, which will go to div
             >
               <FrontSide>
                 <img
@@ -169,8 +170,8 @@ class BoneCarousel extends React.Component {
               flipOnClick={false} // default false
               flipDirection="horizontal" // horizontal or vertical
               ref={r => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
-            // if you pass isFlipped prop component will be controlled component.
-            // and other props, which will go to div
+              // if you pass isFlipped prop component will be controlled component.
+              // and other props, which will go to div
             >
               <FrontSide>
                 <img
@@ -196,8 +197,8 @@ class BoneCarousel extends React.Component {
               flipOnClick={false} // default false
               flipDirection="horizontal" // horizontal or vertical
               ref={r => (this.flippy = r)} // to use toggle method like this.flippy.toggle()
-            // if you pass isFlipped prop component will be controlled component.
-            // and other props, which will go to div
+              // if you pass isFlipped prop component will be controlled component.
+              // and other props, which will go to div
             >
               <FrontSide>
                 <img
@@ -218,6 +219,12 @@ class BoneCarousel extends React.Component {
             </Flippy>
           </Carousel.Item>
         </Carousel>
+        <p style={{marginTop: "20px"}}>Access the AR camera with the following QR code!</p>
+        <img style={{
+          width: "300px",
+          height: "300px",
+          margin: "auto"
+        }} src={QR} />
       </div>
     );
   }
