@@ -15,13 +15,13 @@ class NavBar extends React.Component {
                     <img src={logo} style={{ height: "50px", paddingRight: "30px", paddingLeft: "20px", margin: "10px" }}></img>
               </Link>
             <Nav className="mr-auto">
-                <Link style={{ color: "white", paddingRight: "20px"}} to="/bonecards">
+                <Link style={{ color: "white", paddingRight: "20px", paddingTop: "8px", fontFamily: "now"}} to="/bonecards">
                     CARDS
                 </Link>
-                    <Link style={{ color: "white", paddingRight: "20px" }} to="/faq">
+                    <Link style={{ color: "white", paddingRight: "20px", paddingTop: "8px", fontFamily: "now" }} to="/faq">
                         FAQ
                 </Link>
-                    <Link style={{ color: "white", paddingRight: "20px" }} to="/team">
+                    <Link style={{ color: "white", paddingRight: "20px", paddingTop: "8px", fontFamily: "now" }} to="/team">
                         ABOUT US
                 </Link>
             </Nav>

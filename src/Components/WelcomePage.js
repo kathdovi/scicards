@@ -21,7 +21,7 @@ class WelcomePage extends React.Component {
                   </Col>
                 </Row>
                 <Row>
-                  <Col className="dark-box">Benefits</Col>
+                  <Col className="dark-box">BENEFITS</Col>
                   <Col className="light-box" />
                 </Row>
                 <Row>

@@ -3,6 +3,11 @@
   src: url("./now.medium.otf") format("opentype");
 }
 
+@font-face {
+  font-family: Gotham;
+  src: url("./Gotham-Bold.otf") format("opentype");
+}
+
 .App {
   text-align: center;
 }
