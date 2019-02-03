@@ -18,7 +18,7 @@ class NavBar extends React.Component {
                 <Link style={{ color: "white", paddingRight: "20px"}} to="/bonecards">
                     CARDS
                 </Link>
-                    <Link style={{ color: "white", paddingRight: "20px" }} to="/bonecards">
+                    <Link style={{ color: "white", paddingRight: "20px" }} to="/faq">
                         FAQ
                 </Link>
                     <Link style={{ color: "white", paddingRight: "20px" }} to="/team">

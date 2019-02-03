@@ -18,6 +18,9 @@
 
 .light-box {
     background-color: #ffb89c;
+    color: white;
+    text-align: left;
+    padding: 15px;
 }
 
 .secondary {
@@ -30,4 +33,9 @@
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+}
+
+.faq {
+    padding: 5px;
+    font-size: 25px;
 }
