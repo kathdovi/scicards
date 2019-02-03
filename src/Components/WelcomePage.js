@@ -11,12 +11,12 @@ class WelcomePage extends React.Component {
         return (
           <Container>
             <Row>
-              <Col xs={6}>
+              <Col lg style={{marginBottom: "10px"}}>
                 <img src={demo} style={{ width: "100%" }} />
               </Col>
               <Col>
                 <Row>
-                  <Col className="gray-box">
+                  <Col md className="gray-box">
                     STUDENTS LOVE LEARNING WITH SCICARDS
                   </Col>
                 </Row>
