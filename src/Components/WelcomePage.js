@@ -40,8 +40,20 @@ class WelcomePage extends React.Component {
                   VIEW DEMO
                 </Link>
               </Col>
-              <Col className="light-box alt">DO THAT</Col>
-              <Col className="dark-box alt">DO THOSE</Col>
+              <Col className="light-box alt">
+                <a
+                  style={{ color: "black" }}
+                  href="./kathleen.jpg"
+                  download
+                >
+                  DOWNLOAD CARDS
+                </a>
+              </Col>
+              <Col className="dark-box alt">
+                <a style={{color: "white"}} href="https://github.com/williamx98/Interactive-BioEducation-App?fbclid=IwAR1rkK8YLvR9-BYWpjGPkTRkdJoOq3w-cRjsDT9am0HhT_mDerrw2ON_cFE">
+                SOURCE CODE
+                </a>
+              </Col>
             </Row>
           </Container>
         );
